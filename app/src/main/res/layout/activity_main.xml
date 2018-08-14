@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jnitest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sample_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hello World!"
+            android:gravity="center"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/add_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="加法运算"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/append_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="字符串拼接"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/increase_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="改变数组元素大小"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/check_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/check_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="检验密码是否正确"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="从C调用Java中的无参方法"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/addFromC_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="回调带int参数的方法"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/stringFomeC_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="回调带String参数的方法"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/displayStringFromC_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="回调带String参数的静态方法"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <com.example.jnitest.PressureView
+            android:id="@+id/pressure_pv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
